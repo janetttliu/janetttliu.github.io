@@ -12,6 +12,7 @@ body, body * {
 
 body {
     background: var(--primary) !important;
+    font-family: 'Georgia Pro Regular', Georgia, serif !important;
 }
 
 
