@@ -105,9 +105,10 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h5 class="text-primary-gradient fw-medium">Project Overview</h5>
-                        <h2 class="mb-4" style="color: #000;">From my work on Queen's Design Team</h2>
-                        <p class="mb-4">During my first year on the team I helped design this exoskeleton thigh brace which won first place at
-                            the ACE exoskeleton competition in Michigan last year.
+                        <h2 class="mb-4" style="color: #000;">From my work on Queen's Aerospace Design Team</h2>
+                        <p class="mb-4">On the research sub-team I set up a complete OpenFOAM simulation for an airfoil with
+                            regional, sinusodial body force to simulate DBD actuators. Accepted to present at the international
+                            IMAV converence in 2025 and finalist for the AEAC student paper competition.
                         </p>
                     </div>
 
@@ -127,15 +128,15 @@
                             <h3 style="color: #ffffff;">Design Constraints</h3>
                             <p style="color: #ffffff;">
                                 <br>
-                                The exoskeleton was deisgned to be a hard lower body exoskeleton that would help first responders. It had to 
-                                be easy to take off, not too bulky, able to resist decent impact, comfortable, and allow for as much movement as possible.
-                                Taking these constaints into consideration I made a thigh brace which did not wrap around the entire leg, but instead only went halfway.
-                                This provided enough solid support, and could be connected with the use of a velcro strap. That velcro strap would also
-                                make the brace easier to take off. The large hole on the side was designed to be able to connect to the main frame which was carbon fiber tubing.
-                                Furthermore, the edges were all fileted to make it more comfortable. 
-
-                                Eventually the model was 3D printed horizontally as well to strengthen the overall joint. Having the print lines go across horizontally
-                                make the brace less prone to breaking.
+                                    Simulation to investigate effects of plasma DBD actuators on an airfoil at Low Reynolds number,
+                                     including laminar separation bubbles. kOmegaSST model captures LSBs but fails to predict stall and over
+                                     predicts lift past 10 degrees. Transition Model may be more accurate but was not investigated.
+                                     Plasma region is modelled using topoSetDict as a rotatedBoxToCell, body force modelled using fvOptions through 
+                                     vectorSemiImplicit with a time varying force by inputting magnitude of force in a table. 
+                                     Simulations conducted with and without plasma. Mesh created through ANSYS Fluent. 
+                                     NACA0012 Airfoil Chord length 0.1m Re = 53,000 FreeStreamVelocity = 7.95m/s rhoInf = 1.0 Nu = 1.50e-05; 2D Incompressible 
+                                     PIMPLE solver in PISO mode RAS: kw-SST and kOmegaSSTLM MaxCo = 1.0 2sec simulation time wall y+ average ~3 wall y+ max ~ 8
+                                        
                             </p>
                         </div>
                         <div class="column" style="background-color: #F0F6FF">
