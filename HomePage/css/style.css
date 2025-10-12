@@ -10,6 +10,11 @@ body, body * {
     color: #000 !important;
 }
 
+body {
+    background: var(--primary) !important;
+}
+}
+
 /* Heading */
 h1,
 h2,
