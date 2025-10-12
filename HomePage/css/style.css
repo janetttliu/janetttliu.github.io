@@ -15,6 +15,11 @@ body {
     font-family: 'Georgia Pro Regular', Georgia, serif !important;
 }
 
+h1, h2, h3, h4, h5, h6, p, .fw-bold, .fw-semi-bold, .fw-medium {
+    font-family: 'Georgia Pro Regular', Georgia, serif !important;
+}
+}
+
 
 /* Heading */
 h1,
