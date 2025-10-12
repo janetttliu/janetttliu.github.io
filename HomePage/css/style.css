@@ -38,33 +38,33 @@ h5,
 h6,
 .fw-medium {
     font-weight: 500 !important;
-}
-
+    --secondary: #d6e8ff;
+    --light: #fffefa;
 
 /* Gradient Text */
 .text-primary-gradient {
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: #fffefa !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.text-secondary-gradient {
+  background: #d6e8ff !important;
     background: linear-gradient(to bottom right, var(--secondary), var(--primary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .bg-primary-gradient {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
-}
+    background: #d6e8ff !important;
 
 .bg-secondary-gradient {
     background: linear-gradient(to bottom right, var(--secondary), var(--primary));
 }
 
-
-/* Button */
-.btn {
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
     transition: .5s;
 }
 
