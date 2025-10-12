@@ -5,6 +5,11 @@
     --dark: #2c2929;
 }
 
+/* Make all fonts black globally */
+body, body * {
+    color: #000 !important;
+}
+
 /* Heading */
 h1,
 h2,
