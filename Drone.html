@@ -35,7 +35,7 @@
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 d-flex align-items-center justify-content-between">
                 <!-- Left: Logo -->
 <!--                 <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0">Angie's Portfolio</h1>
+                    <h1 class="m-0">Janet's Portfolio</h1>
                 </a> -->
 
                 <!-- Right: Toggler (mobile only) -->
@@ -106,12 +106,13 @@
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h5 class="text-primary-gradient fw-medium">Project Overview</h5>
                         <h2 class="mb-4" style="color: #000;">From my work on Queen's Aerospace Design Team</h2>
-                        <p class="mb-4">As the Aerodynamics Lead, I designed a fixed-wing twin propellor drone using
+                        <p class="mb-4">As the Aerodynamics Lead, I designed Turbo, a fixed-wing twin propellor drone using
                              OpenVSP and QAPOT (QADT Python Optimization Script)
-                             using the AeroSandBox Library in preparation for the 2026 competition. Analysis is currently being 
-                             conducted using XFLR5 to ensure stability and CFD simulations to optimize the design for lift. The drone 
-                             draws inspiration from the Twin Otter and is designed for stability and banner towing capabilities.
-                              The final competition drone will be designed by sub-team members!
+                             using the AeroSandBox Library in preparation for the 2026 competition. During design iteration, quick analysis was
+                             conducted using flow5/XFLR5's panel method. XFLR5 was also used to ensure static and dynamic stability. CFD simulations were used to
+                             further predict drag and lift characteristics. Drawing inspiration from
+                             the Twin Otter, Turbo is designed for stability and banner towing capabilities.
+                             The final competition drone was iterated upon by sub-team members. Turbo succesfully completed all three mission objectives.
                         </p>
                     </div>
 
@@ -150,7 +151,7 @@
                      <div class="column" style="background-color: #d6e8ff">
                          <h3 style="color: #ffffff;">CFD Analysis</h3>
                             <p class="mb-4" style="color: #ffffff;">
-                                 CFD analysis through OpenFOAM and Paraview is conducted on the first
+                                 CFD analysis through OpenFOAM and Paraview was conducted on the first
                                  prototype iteration. Simulation constraints include simulating it as zero angle of attack,
                                   steady state, incompressible flow at 24 m/s using simpleFoam. The mesh is generated using CFMesh
                                    with refinement around the entire body, and finer cells at the trailing edges. Computational 
@@ -161,7 +162,7 @@
                                      mesh contains just under 2 million cells, with the outermost boundary at 0.15m while smallest cells around the body are 0.001m. The mesh passes
                                       all quality checks in OpenFoam except for 6 open cells. Post processing using Paraview visualizes turbulent kinetic energy, pressure distribution around the drone. (Reflect, threshold, contour, streamlines etc.)
                                      Numerically, the lift and drag coefficients are similar with an error around 20% when compared with QAPOT (Python script) results.
-                                    The results will be used to optimize the design in its second iteration.
+                                    The results were be used to optimize the design in its second iteration.
                             </p>
                         </div>
 
