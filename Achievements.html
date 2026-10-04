@@ -23,13 +23,27 @@
             border-radius: 15px;
         }
 
+        .achievement-box h3 {
+            text-align: center;
+        }
+
+        .achievement-item {
+            min-width: 0;
+            text-align: center;
+        }
+
+        .achievement-date {
+            margin: 0.5rem 0 0;
+            font-size: 1rem;
+        }
+
         .achievement-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 24px;
         }
 
-        .achievement-box:nth-child(even) {
+        .achievement-item:nth-child(even) .achievement-box {
             background-color: #F0F6FF;
         }
 
@@ -75,11 +89,22 @@
             <div class="container py-5 px-lg-5">
                 <h2 class="mb-4" style="color: #000;">Achievements</h2>
                 <div class="achievement-grid">
-                    <section class="achievement-box"><h3>Canadian Aeronautics and Space Institute Conference (CASI 2026) Presentation</h3></section>
-                    <section class="achievement-box"><h3>3rd Place - Canadian Engineering Competition</h3></section>
-                    <section class="achievement-box"><h3>First Place - Ontario Engineering Competition</h3></section>
-                    <section class="achievement-box"><h3>First - Place Queen's Engineering Competition</h3></section>
-                    <section class="achievement-box"><h3>Achievement 4</h3></section>
+                    <div class="achievement-item">
+                        <section class="achievement-box"><h3>Canadian Aeronautics and Space Institute Conference (CASI 2026) Presentation</h3></section>
+                        <p class="achievement-date">2026</p>
+                    </div>
+                    <div class="achievement-item">
+                        <section class="achievement-box"><h3>3rd Place - Canadian Engineering Competition</h3></section>
+                        <p class="achievement-date">2026</p>
+                    </div>
+                    <div class="achievement-item">
+                        <section class="achievement-box"><h3>First Place - Ontario Engineering Competition</h3></section>
+                        <p class="achievement-date">2026</p>
+                    </div>
+                    <div class="achievement-item">
+                        <section class="achievement-box"><h3>First - Place Queen's Engineering Competition</h3></section>
+                        <p class="achievement-date">2025</p>
+                    </div>
                 </div>
             </div>
         </main>
